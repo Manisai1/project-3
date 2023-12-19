@@ -1,0 +1,19 @@
+1) Python, overloading is not an applied concept. However, if you are trying to create a case where, for instance, you want one initializer to be performed if passed an argument of type foo and another initializer for an argument of type bar then, since everything in Python is handled as object, you can check the name of the passed object's class type and write conditional handling based on that.
+
+2)we use methods to manage printing like for 
+addition we use __add__(self,other)
+subtraction we use __sub__(self,other)
+multiplication we use __mul__(self,other)
+division we use __div__(self,other)
+
+3)The slice operator in Python is used to extract a specific portion of a sequence, such as a string, list, or tuple. It is an operator that allows you to specify a starting and ending point, as well as a step size, and returns a new sequence that contains only the elements within that range.
+The slice operator works by taking a sequence and returning a new sequence that contains only the specified range of elements. You can think of it as a way of "slicing" a sequence into smaller, more manageable pieces
+
+4)Python in its definition provides methods to perform inplace operations, i.e. doing assignments and computations in a single statement using an operator module.iadd()
+isub()
+iconcat()
+imul()
+itruediv()
+imod()
+
+5)Operator overloading is mostly useful when you're making a new class that falls into an existing "Abstract Base Class" (ABC) -- indeed, many of the ABCs in standard library module collections rely on the presence of certain special methods (and special methods, one with names starting and ending with double underscores AKA "dunders", are exactly the way you perform operator overloading in Python). This provides good starting guidance.
